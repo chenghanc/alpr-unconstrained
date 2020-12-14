@@ -133,8 +133,45 @@ Three-Step Approach
          5. Plate Prediction
 ```
 
-## Appendix-3: Process Flow for ALPR
+## Appendix-3: OCR: One-Step Approach
 
+```
+One-Step Approach
+==================
 
+* Perform OCR directly: The characters will be detected 
+                        directly from the input images
 
+Module-1        
+========       
+
+Characters Detection (Yolo)
+--------------------
+
+* Train Yolo Model
+  +++++++++++++++++++++++++++++++
+* + Perform OCR on Input Images +
+  +++++++++++++++++++++++++++++++
+* Network Resolution 
+  (800 x 448)
+
+  Process Flow for Yolo:
+  ==========================
+
+         1. Input Image
+
+                |                            | Network Resolution
+                |                            | for Detecting Characters
+                |                            |               ==========
+                v                            | (800 x 448)
+
+         2. Characters Predicted (OCR)         adjustable:
+                                 -----         (speed / accuracy)
+                |
+                |
+                |
+                v
+
+         3. Plate Prediction
+```
 
