@@ -37,3 +37,7 @@ Download all the trained models (see this repo [alpr-unconstrained](https://gith
 ```shellscript
 $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 ```
+
+## Example
+![](output/HKPseudoo7700108.jpg)
+
