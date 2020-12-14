@@ -39,5 +39,5 @@ $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 ```
 
 ## Example
-![](output/HKPseudoo7700108.jpg)
+![](output/HKPseudoo7700108_output.png)
 
