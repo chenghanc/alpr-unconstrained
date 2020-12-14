@@ -47,11 +47,11 @@ $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 
 ![](output/HKPseudoo7700193_output.png)
 
-![](output/j3tourshongkong_13956550770_Car Number Plate - SD 1998_output.png)
+![](output/j3tourshongkong_13956550770_Car_Number_Plate_-_SD_1998_output.png)
 
-![](output/j3tourshongkong_13956656180_Car Number Plate - HU 1888_output.png)
 
-![](output/j3tourshongkong_13947279847_Car Number Plate - MAY ANNA_output.png)
+
+
 
 
 
