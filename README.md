@@ -14,7 +14,10 @@ In order to run the code, check if these [libraries](https://github.com/chenghan
 
 - #### darknet (libdarknet.so)
     * Compiled with GPU=1, CUDNN=1, OPENCV=1, LIBSO=1
-        - `cd darknet && make -j20`
+
+```shellscript
+$ cd darknet && make -j20
+```
 
 ## Download Models
 
