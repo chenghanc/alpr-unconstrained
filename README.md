@@ -1,6 +1,6 @@
 # ALPR using trained OCR model on custom dataset
 
-This repository contains the author's trained OCR model on custom dataset
+This repository performs the License Plate Recognition based on this [project](https://github.com/sergiomsilva/alpr-unconstrained). The only modification is the OCR Detection, which is trained on private dataset.
 
 ## Overview of ALPR Procedure
 
