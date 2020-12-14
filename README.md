@@ -12,6 +12,9 @@ This repository performs the License Plate Recognition based on this [project](h
 
 In order to run the code, check if these [libraries](https://github.com/chenghanc/alpr-unconstrained/blob/alpr/version-alpr27) are installed. Darknet framework is self-contained in the `darknet` folder and must be compiled before running the code
 
+- #### libdarknet.so
+    * Compiled with GPU=1, CUDNN=1, OPENCV=1, LIBSO=1
+
 ```shellscript
 $ cd darknet && make
 ```
