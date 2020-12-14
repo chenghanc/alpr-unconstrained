@@ -41,6 +41,8 @@ Download all the trained models (see this repo [alpr-unconstrained](https://gith
 $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 ```
 
+---
+
 ## Example
 ![](output/HKPseudoo7700108_output.png)
 
@@ -50,9 +52,46 @@ $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 
 ![](output/HKPseudoo7700193_output.png)
 
+---
 
+# Appendix
 
+## ALPR Process
 
+```
+Three-Step Approach
+====================
+
+Module-1                     Module-2
+========                     ========
+
+Vehicles Detection (Yolo)    Plate Detection (WPOD-Net)
+------------------           ---------------
+
+* Yolo                       * WPOD-Net
+* Network Resolution         * Train WPOD-Net (One-Line Plate)
+* (416 x 416)                * Tensorflow 
+
+Module-3
+========
+
+OCR Detection (Yolo-OCR-Net)
+-------------
+
+* Train Yolo (Characters)  
+  ++++++++++++++++++++++++++++++++++
+* + Perform OCR on Detected Plates +
+  ++++++++++++++++++++++++++++++++++
+* Network Resolution 
+  (1248 x 704)
+
+  #########################################################
+  # Detection Network is adjustable depending on the      #
+  # cropped plate size, which in our case is roughly      #
+  # (W x H) = (201 x 49). So we can set Detection Network # 
+  # Resolution to be (224 x 64) or (288 x 96).            #          
+  #########################################################
+```
 
 
 
