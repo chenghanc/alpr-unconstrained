@@ -56,7 +56,7 @@ $ bash run-lpr.sh -i samples/test-lpr -o /tmp/output -c /tmp/output/results.csv
 
 # Appendix
 
-## ALPR Process
+## Appendix-1: ALPR Process
 
 ```
 Three-Step Approach
@@ -93,6 +93,47 @@ OCR Detection (Yolo-OCR-Net)
   #########################################################
 ```
 
+## Appendix-2: ALPR Process Flow
+
+```
+Three-Step Approach
+====================
+
+  Process Flow for ALPR:
+  ======================
+
+         1. Input Image                      
+                                             
+                |                            
+                |  Yolo                          
+                |                            |
+                v                            |
+                                             |
+         2. Vehicle Located      (Module-1)  |
+                                 ----------  |
+                |                            |
+                |  WPOD-Net                  |
+                |                            | Network Resolution
+                v                            | for Detecting Vehicle             
+                                             |               =======
+         3. Plate Located        (Module-2)  | (416 x 416)      
+                                 ----------  
+                |                            |
+                |  Yolo-OCR-Net              |
+                |                            | Network Resolution
+                v                            | for Detecting Characters
+                                             |               ==========
+         4. Characters Predicted (Module-3)  | (288 x 96)
+                                 ----------
+                |                              adjustable
+                |
+                |
+                v
+
+         5. Plate Prediction
+```
+
+## Appendix-3: Process Flow for ALPR
 
 
 
