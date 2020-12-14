@@ -2,7 +2,7 @@
 
 This repository contains the author's trained OCR model on custom dataset
 
-## Overview
+## Overview of ALPR Procedure
 
 - #### Step 1: Detect vehicles
 - #### Step 2: Detect license plates
@@ -20,15 +20,15 @@ $ cd darknet && make
 
 Download all the trained models (see this repo [alpr-unconstrained](https://github.com/sergiomsilva/alpr-unconstrained))
 
-## Vehicle Detection
+## Step 1: Vehicle Detection
 
 - #### Use trained Yolo model to perform vehicle detection (see this repo [alpr-unconstrained](https://github.com/sergiomsilva/alpr-unconstrained))
 
-## License Plate Detection
+## Step 2: License Plate Detection
 
 - #### Use LP detector trained by this repo [alpr-unconstrained](https://github.com/sergiomsilva/alpr-unconstrained)
 
-## OCR Detection
+## Step 3: OCR Detection
 
 - #### Perform OCR Detection. The model is trained on custom dataset using [darknet](https://github.com/AlexeyAB/darknet)
 
